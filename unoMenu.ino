@@ -22,7 +22,7 @@
 
 LiquidCrystal_I2C lcd(0x27, 16, 2);
 
-// Two DS18B20 temperature sensors on pin A1
+// Two DS18B20 temperature sensors on pin A1; sensor with id=0 is treated as the Interior Temp probe ("IN"), sensor with id=1 is the exterior one ("OUT")
 OneWire oneWire(A1);
 DallasTemperature sensors(&oneWire);
 
